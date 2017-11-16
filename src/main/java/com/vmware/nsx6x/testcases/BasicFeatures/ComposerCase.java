@@ -14,10 +14,10 @@ public class ComposerCase {
 		mgr.setupSegmentIPPool();
 		mgr.setupMulticast();
 		mgr.setupTransportZone();
+		mgr.installControllers();
 		mgr.setupLogicalSwitch();
 		mgr.installEdge();
 		mgr.setupSSLVPN();
-		mgr.installControllers();
 		mgr.setupLogicalRouter();
 		mgr.setupUniversalLogicalRouter();
 	}
