@@ -42,6 +42,7 @@ public class ComposerManager {
 	
 	public void setupSegmentIPPool() {
 		this.vxlanMgr.setDefaultSegmentIPPool();
+		this.vxlanMgr.setDefault_UniversalSegmentIPPool();
 		try {
 			Thread.sleep(3000);
 		}catch(Exception e) {
@@ -63,7 +64,7 @@ public class ComposerManager {
 		this.vxlanMgr.setDefaultTransportZone();
 		this.vxlanMgr.setDefault_UniversalTransportZone();
 		try {
-			Thread.sleep(120000);
+			Thread.sleep(3000);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
