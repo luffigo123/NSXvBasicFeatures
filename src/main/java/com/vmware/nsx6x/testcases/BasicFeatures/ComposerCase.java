@@ -15,6 +15,7 @@ public class ComposerCase {
 		mgr.setupMulticast();
 		mgr.setupTransportZone();
 		mgr.installControllers();
+		mgr.setupLogicalSwitch();
 		mgr.installEdge();
 		mgr.setupSSLVPN();
 		mgr.setupLogicalRouter();

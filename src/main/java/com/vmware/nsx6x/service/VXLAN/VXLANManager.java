@@ -62,14 +62,14 @@ public class VXLANManager {
 	public String universal_multiCaseBegin= "239.7.7.1";
 	public String universal_multiCaseEnd= "239.9.9.1";
 	
-	public String transportZoneName;
-	public String universalTransportZoneName;
+	public String transportZoneName = TestData.NativeString;
+	public String universalTransportZoneName = TestData.NativeString + TestData.NativeString.substring(0,1);
 	
-	public String segmentIPPoolName;
-	public String universalSegmentIPPoolName;
+	public String segmentIPPoolName = TestData.NativeString;
+	public String universalSegmentIPPoolName = TestData.NativeString + TestData.NativeString.substring(0,1);
 	
-	public String multicastName;
-	public String universalMulticastName;
+	public String multicastName = TestData.NativeString;
+	public String universalMulticastName = TestData.NativeString.substring(0,1) + TestData.NativeString;
 	
 	private UniversalSyncRoleManager universalSyncRoleManager;
 	
@@ -85,14 +85,14 @@ public class VXLANManager {
 		multicast_URL = "https://" + vsmIP + "/api/2.0/vdn/config/multicasts";
 		transportZone_URL = "https://" + vsmIP + "/api/2.0/vdn/scopes";
 		
-		transportZoneName = TestData.NativeString;
-		universalTransportZoneName = TestData.NativeString + TestData.NativeString.substring(0,1);
-		
-		segmentIPPoolName = TestData.NativeString;
-		universalSegmentIPPoolName = TestData.NativeString + TestData.NativeString.substring(0,1);
-		
-		multicastName = TestData.NativeString;
-		universalMulticastName = TestData.NativeString.substring(0,1) + TestData.NativeString;
+//		transportZoneName = TestData.NativeString;
+//		universalTransportZoneName = TestData.NativeString + TestData.NativeString.substring(0,1);
+//		
+//		segmentIPPoolName = TestData.NativeString;
+//		universalSegmentIPPoolName = TestData.NativeString + TestData.NativeString.substring(0,1);
+//		
+//		multicastName = TestData.NativeString;
+//		universalMulticastName = TestData.NativeString.substring(0,1) + TestData.NativeString;
 							
 		log.info("Init all resource's Moid!");
 		this.initMoid(vc);

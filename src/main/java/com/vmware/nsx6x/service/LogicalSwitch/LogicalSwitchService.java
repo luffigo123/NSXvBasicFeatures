@@ -22,7 +22,7 @@ public class LogicalSwitchService {
 
 	private String logicalSwitch_URL;
 	private String logicaSwitch_UnderSpecificTransportZone_URL;
-	private String logicaSwitch_UnderSpecificUniversalTransportZone_URL;
+//	private String logicaSwitch_UnderSpecificUniversalTransportZone_URL;
 	
 	public VXLANManager vxlanMrg;
 	
@@ -40,6 +40,8 @@ public class LogicalSwitchService {
 		vxlanMrg = new VXLANManager();
 		logicalSwitch_URL = "https://" + vsmIP + "/api/2.0/vdn/virtualwires";
 		
+		logicaSwitch_UnderSpecificTransportZone_URL = "https://" + vsmIP + "/api/2.0/vdn/scopes/";
+		
 //		defaultLogicalSwitchName001 = "logicalSwitch001" + TestData.NativeString;
 //		defaultLogicalSwitchName002 = "logicalSwitch002" + TestData.NativeString;
 //		
@@ -52,31 +54,45 @@ public class LogicalSwitchService {
 		universalLogicalSwitchName = TestData.NativeString.substring(0,1) + TestData.NativeString;
 		universalLogicalSwitchName002 = TestData.NativeString.substring(0,1) + TestData.NativeString.substring(0,1) + TestData.NativeString;
 		
-		this.initLogicalSwitch_UnderSpecificTransportZone_URL();
-		this.initUniversalLogicalSwitch_UnderSpecificUniversalTransportZone_Env();
+//		this.initLogicalSwitch_UnderSpecificTransportZone_URL();
+//		this.initUniversalLogicalSwitch_UnderSpecificUniversalTransportZone_Env();
 	}
 	
-	public void initLogicalSwitch_UnderSpecificTransportZone_URL() {
-		vxlanMrg.setDefaultSegmentIPPool();
-		vxlanMrg.setDefaultMulticast();
+//	public void initLogicalSwitch_UnderSpecificTransportZone_URL() {
+//		vxlanMrg.setDefaultSegmentIPPool();
+//		vxlanMrg.setDefaultMulticast();
+//		vxlanMrg.setDefaultTransportZone();
+//		String transportZoneName = vxlanMrg.transportZoneName;
+//		String transportZoneId = vxlanMrg.getSpecificTransportZoneId(transportZoneName);
+//		///2.0/vdn/scopes/{scopeId}/virtualwires
+//		logicaSwitch_UnderSpecificTransportZone_URL = "https://" + vsmIP + "/api/2.0/vdn/scopes/" + transportZoneId + "/virtualwires";
+//	}
+//	
+//	public void initUniversalLogicalSwitch_UnderSpecificUniversalTransportZone_Env() {
+//		vxlanMrg.setDefault_UniversalSegmentIPPool();
+//		vxlanMrg.setDefault_UniversalMulticast();
+//		vxlanMrg.setDefault_UniversalTransportZone();
+//		String universalTransportZoneName = vxlanMrg.universalTransportZoneName;
+//		String universalTransportZoneId = vxlanMrg.getSpecificTransportZoneId(universalTransportZoneName);
+//		///2.0/vdn/scopes/{scopeId}/virtualwires
+//		logicaSwitch_UnderSpecificUniversalTransportZone_URL = "https://" + vsmIP + "/api/2.0/vdn/scopes/" + universalTransportZoneId + "/virtualwires";
+//
+//	}
+//	
+	public String getSpecificTransportZoneId(){
+		String transportZoneId = "";
 		vxlanMrg.setDefaultTransportZone();
 		String transportZoneName = vxlanMrg.transportZoneName;
-		String transportZoneId = vxlanMrg.getSpecificTransportZoneId(transportZoneName);
-		///2.0/vdn/scopes/{scopeId}/virtualwires
-		logicaSwitch_UnderSpecificTransportZone_URL = "https://" + vsmIP + "/api/2.0/vdn/scopes/" + transportZoneId + "/virtualwires";
+		transportZoneId = vxlanMrg.getSpecificTransportZoneId(transportZoneName);
+		return transportZoneId;
 	}
 	
-	public void initUniversalLogicalSwitch_UnderSpecificUniversalTransportZone_Env() {
-		vxlanMrg.setDefault_UniversalSegmentIPPool();
-		vxlanMrg.setDefault_UniversalMulticast();
+	public String getSpecificUniversalTransportZoneId(){
 		vxlanMrg.setDefault_UniversalTransportZone();
 		String universalTransportZoneName = vxlanMrg.universalTransportZoneName;
 		String universalTransportZoneId = vxlanMrg.getSpecificTransportZoneId(universalTransportZoneName);
-		///2.0/vdn/scopes/{scopeId}/virtualwires
-		logicaSwitch_UnderSpecificUniversalTransportZone_URL = "https://" + vsmIP + "/api/2.0/vdn/scopes/" + universalTransportZoneId + "/virtualwires";
-
+		return universalTransportZoneId;
 	}
-	
 	
 	/**
 	 * 
@@ -84,12 +100,14 @@ public class LogicalSwitchService {
 	 * @return
 	 */
 	private String postLogicalSwitch(String contents){
-		String url = this.logicaSwitch_UnderSpecificTransportZone_URL;
+		String url = this.logicaSwitch_UnderSpecificTransportZone_URL + this.getSpecificTransportZoneId() + "/virtualwires";
 		return this.httpReq.postRequest(contents, url);
 	}
 	
 	private String postUniversalLogicalSwitch(String contents){
-		String url = this.logicaSwitch_UnderSpecificUniversalTransportZone_URL + "?isUniversal=true";
+		
+//		String url = this.logicaSwitch_UnderSpecificUniversalTransportZone_URL + "?isUniversal=true";
+		String url = this.logicaSwitch_UnderSpecificTransportZone_URL + this.getSpecificUniversalTransportZoneId() + "/virtualwires?isUniversal=true";
 		return this.httpReq.postRequest(contents, url);
 	}
 	

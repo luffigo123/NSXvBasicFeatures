@@ -61,8 +61,9 @@ public class ComposerManager {
 	
 	public void setupTransportZone() {
 		this.vxlanMgr.setDefaultTransportZone();
+		this.vxlanMgr.setDefault_UniversalTransportZone();
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(120000);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -90,7 +91,8 @@ public class ComposerManager {
 		this.sslvpnMgr.setServerSettingEnv();
 		this.sslvpnMgr.setDefaulIPPoolENV();
 		this.sslvpnMgr.setDefaultAuthEnv();
-		this.sslvpnMgr.setDefaultInstallationPackageEnv();
+//		this.sslvpnMgr.setDefaultInstallationPackageEnv();
+		this.sslvpnMgr.setDefaultPrivateNetworkENV();
 		this.sslvpnMgr.setDefaultInstallationPackageEnv();
 		this.sslvpnMgr.setDefaultUserEnv();
 		this.sslvpnMgr.enableSSLVPN();
@@ -122,6 +124,11 @@ public class ComposerManager {
 	
 	public void setupUniversalLogicalRouter() {
 		this.edgeMgr.setupDefaultUniversalLogicalRouter();
+		try {
+			Thread.sleep(3000);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

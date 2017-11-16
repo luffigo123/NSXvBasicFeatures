@@ -25,12 +25,14 @@ public class SSLVPNManager{
 	public String ipRange = "192.168.3.2-192.168.3.10";
 	public String privateNetwork = "192.168.1.0/24";
 	public String defaultInstallationPackageName = "SSLVPNInstallationPackage001" + TestData.NativeString;
-	public String hostName = DefaultEnvironment.UplinkIP;
+//	public String hostName = DefaultEnvironment.UplinkIP;
+	public String hostName = DefaultEnvironment.edgeGatewayUplinkIPAddress;
 	public String userId = "User001" + TestData.NativeString;
 	public String userPassword = "!QAZ2wsx";
 	
 	public String status = "";
-	public String ipAddress = DefaultEnvironment.UplinkIP;
+//	public String ipAddress = DefaultEnvironment.UplinkIP;
+	public String ipAddress = DefaultEnvironment.edgeGatewayUplinkIPAddress;
 	
 	private String filepath = Config.class.getProtectionDomain().getCodeSource().getLocation().getPath();
 	private String xmlPath_ServerSetting = filepath + "/RestCallXML/ServerSetting.xml";
