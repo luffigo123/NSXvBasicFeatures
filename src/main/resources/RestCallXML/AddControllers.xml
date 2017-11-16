@@ -1,0 +1,11 @@
+<controllerSpec>
+<name>nsx-controller-node1</name>
+<description>nsx-controller</description>
+<ipPoolId>ipPool-1</ipPoolId>
+<resourcePoolId>domain-c1</resourcePoolId>
+<hostId>host-1</hostId>
+<datastoreId>datastore-1</datastoreId>
+<deployType>medium</deployType>
+<networkId>dvportgroup-1</networkId>
+<password>MyTestPassword</password>
+</controllerSpec>

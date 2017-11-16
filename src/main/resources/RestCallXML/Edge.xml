@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edge>
+    <datacenterMoid>datacenter-2</datacenterMoid>
+    <tenant>default</tenant>
+    <name>Edge003</name>
+    <fqdn>vShield-edge-2</fqdn>
+    <description>Description for the edge gateway</description>
+    <enableAesni>true</enableAesni>
+    <enableFips>false</enableFips>
+    <vseLogLevel>emergency</vseLogLevel>
+    <vnics>
+    </vnics>
+    <appliances>
+        <applianceSize>compact</applianceSize>
+        <appliance>
+            <resourcePoolId>domain-c7</resourcePoolId>
+           	<datastoreId>datastore-11</datastoreId>
+        </appliance>
+        <deployAppliances>true</deployAppliances>
+    </appliances>
+    <cliSettings>
+		<userName>admin</userName>
+	    <password>!QAZ2wsx3edc</password>
+		<remoteAccess>false</remoteAccess> 
+	</cliSettings>
+    <autoConfiguration>
+        <enabled>true</enabled>
+        <rulePriority>high</rulePriority>
+    </autoConfiguration>
+    <type>gatewayServices</type>
+    <queryDaemon>
+        <enabled>false</enabled>
+        <port>5666</port>
+    </queryDaemon>
+</edge>

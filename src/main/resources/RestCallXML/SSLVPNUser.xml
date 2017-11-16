@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user>
+	<userId>stalin</userId>
+	<password>apple@123</password>
+	<firstName>STALIN</firstName>
+	<lastName>RAJAKILLI</lastName>
+	<description>This user belong to vsm team</description>
+	<disableUserAccount>false</disableUserAccount> <!--optional. Default is false-->
+	<passwordNeverExpires>true</passwordNeverExpires> <!--optional. Default is false-->
+	<allowChangePassword>
+		<changePasswordOnNextLogin>false</changePasswordOnNextLogin> <!--optional. Default is false-->
+	</allowChangePassword>
+</user>

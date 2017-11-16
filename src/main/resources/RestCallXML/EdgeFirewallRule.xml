@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<firewallRules>
+	<firewallRule>
+		<ruleTag>1</ruleTag> 
+		<name>rule1</name>
+		<matchTranslated>true</matchTranslated>
+		<direction>in</direction>
+		<action>accept</action>
+		<enabled>true</enabled>
+		<loggingEnabled>true</loggingEnabled>
+		<description>comments</description>
+	</firewallRule>
+</firewallRules>

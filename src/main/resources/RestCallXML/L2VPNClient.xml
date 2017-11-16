@@ -1,0 +1,34 @@
+<l2Vpn>
+    <enabled>true</enabled>
+    <logging>
+        <enable>false</enable>
+        <logLevel>info</logLevel>
+    </logging>
+    <l2VpnSites>
+        <l2VpnSite>
+            <client>
+                <configuration>
+                    <serverAddress>10.117.168.251</serverAddress>
+                    <serverPort>443</serverPort>
+                    <vnic>10</vnic>
+                    <egressOptimization>
+                        <gatewayIpAddress>2.2.2.2</gatewayIpAddress>
+                    </egressOptimization>
+                    <caCertificate></caCertificate> <!-- Optional. Validate server certificate sent from server againt this cerficate-->
+                    <encryptionAlgorithm>RC4-MD5</encryptionAlgorithm>
+                </configuration>
+                <l2VpnUser>
+                    <userId>ÄÖÜäöüß</userId>
+                    <password>java123</password>
+                </l2VpnUser>
+                <proxySetting>
+                    <type>https</type>
+                    <address>3.3.3.3</address>
+                    <port>8878</port>
+                    <userName>ÄÖÜäöüß</userName>
+                    <password>java123</password>
+                </proxySetting>
+            </client>
+        </l2VpnSite>
+    </l2VpnSites>
+</l2Vpn>

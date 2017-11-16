@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<firewallDraft name="SDFD">
+    <description></description>
+    <preserve>true</preserve>
+    <user>vsphere.local\administrator</user>
+    <mode>userdefined</mode>
+    <config timestamp="0">
+        <contextId>globalroot-0</contextId>
+        
+    </config>
+</firewallDraft>

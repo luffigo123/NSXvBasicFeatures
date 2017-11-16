@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macset>
+	<objectId></objectId>
+	<objectTypeName>MACSet</objectTypeName>
+	<revision>1</revision>
+	<type>
+	<typeName>MACSet</typeName>
+	</type>
+	<name>MACSet1</name>
+	<description>ssssssssssssss</description>
+	<inheritanceAllowed>true</inheritanceAllowed>
+	<value>11:22:33:44:55:66</value>
+</macset>

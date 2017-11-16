@@ -1,0 +1,25 @@
+<nwFabricFeatureConfig>
+	<featureId>com.vmware.vshield.vsm.vxlan</featureId>
+	<resourceConfig>
+		<configSpec class="vdsContext">
+			<mtu>1600</mtu>
+			<switch>
+				<objectId>dvs-18</objectId>
+				<scope /><type />
+			</switch>
+			<teaming>FAILOVER_ORDER</teaming>
+		</configSpec>
+		<resourceId>dvs-18</resourceId>
+	</resourceConfig>
+
+	<resourceConfig>
+		<configSpec class="clusterMappingSpec">
+			<switch>
+				<objectId>dvs-18</objectId>
+				<scope /><type />
+			</switch>
+			<vlanId>0</vlanId>
+		</configSpec>
+		<resourceId>domain-c11</resourceId>
+	</resourceConfig>
+</nwFabricFeatureConfig>

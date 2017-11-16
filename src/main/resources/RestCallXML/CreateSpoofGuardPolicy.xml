@@ -1,0 +1,13 @@
+<spoofguardPolicy>
+    <name>SPG001</name>
+    <description></description>
+    <operationMode>TOFU</operationMode>
+    <enforcementPoint>
+        <id>dvportgroup-20</id>
+        <name>dvPortGroup</name>
+        <type>DistributedVirtualPortgroup</type>
+    </enforcementPoint>
+    <allowLocalIPs>false</allowLocalIPs>
+    <publishPending>false</publishPending>
+    <defaultPolicy>false</defaultPolicy>
+</spoofguardPolicy>

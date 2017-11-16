@@ -1,0 +1,5 @@
+<virtualWireCreateSpec>
+<name>logical switch name</name>
+<description>logical switch description</description>
+<tenantId>Tenant name</tenantId>
+</virtualWireCreateSpec>

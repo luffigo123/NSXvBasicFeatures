@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<securityPolicy>
+    <name>Security Policy001</name>
+    <description></description>
+    <precedence>6300</precedence>
+    <actionsByCategory>
+            <category>firewall</category>
+            <action class="firewallSecurityAction">
+                <objectTypeName>FirewallPolicyAction</objectTypeName>
+                <type>
+                    <typeName>FirewallPolicyAction</typeName>
+                </type>
+                <name>FirewallRule01</name>
+                <description>Firewall01</description>
+                <scope>
+                    <id>globalroot-0</id>
+                    <objectTypeName>GlobalRoot</objectTypeName>
+                    <name>Global</name>
+                </scope>
+                <clientHandle></clientHandle>
+                <extendedAttributes/>
+                <category>firewall</category>
+                <executionOrder>1</executionOrder>
+                <isEnabled>true</isEnabled>
+                <isActionEnforced>false</isActionEnforced>
+                <invalidSecondaryContainers>false</invalidSecondaryContainers>
+                <invalidApplications>false</invalidApplications>
+                <logged>false</logged>
+                <action>allow</action>
+                <direction>outbound</direction>
+                <outsideSecondaryContainer>false</outsideSecondaryContainer>
+            </action>
+        </actionsByCategory>
+    <actionsByCategory>
+            <category>endpoint</category>
+            <action class="endpointSecurityAction">
+                <objectTypeName>EndpointPolicyAction</objectTypeName>
+                <type>
+                    <typeName>EndpointPolicyAction</typeName>
+                </type>
+                <name>GIS</name>
+                <scope>
+                    <id>globalroot-0</id>
+                    <objectTypeName>GlobalRoot</objectTypeName>
+                    <name>Global</name>
+                </scope>
+                <clientHandle></clientHandle>
+                <extendedAttributes/>
+                <category>endpoint</category>
+                <executionOrder>1</executionOrder>
+                <isEnabled>true</isEnabled>
+                <isActionEnforced>false</isActionEnforced>
+                <serviceName>VMware Data Security</serviceName>
+                <serviceId>service-3</serviceId>
+                <invalidServiceId>false</invalidServiceId>
+                <invalidVendorTemplateId>false</invalidVendorTemplateId>
+                <invalidServiceProfile>false</invalidServiceProfile>
+            </action>
+        </actionsByCategory>
+</securityPolicy>

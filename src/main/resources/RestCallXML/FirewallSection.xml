@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="TestSection">
+	<rule disabled="true" logged="true">
+	<name>Matru-3</name>
+	<action>ALLOW</action>
+	</rule>
+</section>

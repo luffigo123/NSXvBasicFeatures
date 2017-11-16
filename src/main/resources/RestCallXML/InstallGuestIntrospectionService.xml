@@ -1,0 +1,13 @@
+<clusterDeploymentConfigs>
+<clusterDeploymentConfig>
+<clusterId>domain-c7</clusterId>
+<datastore>datastore-11</datastore> <!-- Used only in POST. Should be empty in PUT -->
+<services>
+<serviceDeploymentConfig>
+<serviceId>service-6</serviceId>
+<dvPortGroup>dvportgroup-54</dvPortGroup>
+<ipPool></ipPool>
+</serviceDeploymentConfig>
+</services>
+</clusterDeploymentConfig>
+</clusterDeploymentConfigs>

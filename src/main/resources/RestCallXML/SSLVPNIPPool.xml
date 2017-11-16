@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipAddressPool>
+	<description>description</description>
+    <ipRange>192.168.2.2-192.168.2.10</ipRange>
+    <netmask>255.255.255.0</netmask>
+    <gateway>192.168.2.1</gateway>
+    <primaryDns>1.1.1.1</primaryDns>
+    <secondaryDns>2.2.2.2</secondaryDns>
+    <dnsSuffix>eng.vmware.com</dnsSuffix>
+    <winsServer>3.3.3.3</winsServer>
+    <enabled>true</enabled>
+</ipAddressPool>

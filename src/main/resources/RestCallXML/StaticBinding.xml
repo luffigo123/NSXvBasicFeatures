@@ -1,0 +1,12 @@
+<staticBinding>
+	<macAddress>12:34:56:78:90:AB</macAddress>
+	<vmId>vm-111</vmId>
+	<vnicId>1</vnicId>
+	<hostname>abcd</hostname>
+	<ipAddress>192.168.6.66</ipAddress>
+	<defaultGateway>192.168.6.1</defaultGateway>
+	<domainName>eng.vmware.com</domainName>
+	<primaryNameServer>1.2.3.4</primaryNameServer>
+	<secondaryNameServer>4.3.2.1</secondaryNameServer>
+	<leaseTime>infinite</leaseTime>
+</staticBinding>

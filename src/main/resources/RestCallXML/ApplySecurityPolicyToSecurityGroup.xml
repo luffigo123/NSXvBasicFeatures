@@ -1,0 +1,18 @@
+<securityGroupBinding>
+	<objectId>securitygroup-35</objectId>
+	<objectTypeName>SecurityGroup</objectTypeName>
+	<vsmUuid></vsmUuid>
+	<revision>3</revision>
+	<type>
+	<typeName>SecurityGroup</typeName>
+	</type>
+	<name>SGJAN23002</name>
+	<description>DESC SGJAN23002</description>
+	<scope>
+		<id>globalroot-0</id>
+		<objectTypeName>GlobalRoot</objectTypeName>
+		<name>Global</name>
+	</scope>
+	<clientHandle></clientHandle>
+	<extendedAttributes/>
+</securityGroupBinding>

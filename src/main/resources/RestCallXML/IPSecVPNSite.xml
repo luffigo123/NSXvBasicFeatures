@@ -1,0 +1,19 @@
+<site>
+    <enabled>true</enabled>
+    <name>figo</name>
+    <localId>1.1.1.1</localId>
+    <localIp>10.117.168.251</localIp>
+    <peerId>2.2.2.2</peerId>
+    <peerIp>2.2.3.2</peerIp>
+    <encryptionAlgorithm>aes</encryptionAlgorithm>
+    <enablePfs>true</enablePfs>
+    <dhGroup>dh2</dhGroup>
+    <localSubnets>
+          <subnet>1.1.1.0/24</subnet>
+    </localSubnets>
+    <peerSubnets>
+          <subnet>2.2.2.0/24</subnet>
+    </peerSubnets>
+    <psk></psk>
+    <authenticationMode>psk</authenticationMode>
+</site>

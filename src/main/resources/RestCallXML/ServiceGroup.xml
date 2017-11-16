@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationGroup>
+	<name>Figo</name>
+	<description>test</description>
+	<inheritanceAllowed>true</inheritanceAllowed>
+    <member>
+        <objectId>application-278</objectId>
+        <objectTypeName>Application</objectTypeName>
+        <revision>22</revision>
+        <type>
+            <typeName>Application</typeName>
+        </type>
+        <name>HTTP</name>
+        <scope>
+            <id>globalroot-0</id>
+            <objectTypeName>GlobalRoot</objectTypeName>
+            <name>Global</name>
+        </scope>
+        <clientHandle></clientHandle>
+        <extendedAttributes/>
+    </member>
+</applicationGroup>

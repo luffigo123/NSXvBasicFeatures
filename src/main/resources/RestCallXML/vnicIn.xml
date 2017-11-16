@@ -1,0 +1,17 @@
+<vnic>
+	<index>1</index>
+	<name>Intern02</name>
+	<type>internal</type>
+	<portgroupId>network-14</portgroupId>
+	<addressGroups>
+	<addressGroup>
+	<primaryAddress>192.168.2.1</primaryAddress>
+	<subnetMask>255.255.255.0</subnetMask>
+	<subnetPrefixLength>24</subnetPrefixLength>
+	</addressGroup>
+	</addressGroups>
+	<mtu>1500</mtu>
+	<isConnected>true</isConnected>
+	<enableProxyArp>false</enableProxyArp>
+	<enableSendRedirects>false</enableSendRedirects>
+</vnic>

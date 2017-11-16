@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vnics>
+	<vnic>
+	<addressGroups>
+		<addressGroup>
+			<primaryAddress>192.168.12.240</primaryAddress>
+			<subnetMask>255.255.255.0</subnetMask>
+			<subnetPrefixLength>24</subnetPrefixLength>
+		</addressGroup>
+	</addressGroups>
+	<mtu>1500</mtu> <!-- optional. Default is 1600 for type "TRUNK" and 1500 for others-->
+	<type>internal</type> <!-- optional. Default is internal. Other possible value is "uplink" and "TRUNK" -->
+	<isConnected>true</isConnected>
+	<index>6</index>
+	<portgroupId>network-12</portgroupId>
+	<enableProxyArp>false</enableProxyArp>
+	<enableSendRedirects>false</enableSendRedirects>
+	</vnic>
+</vnics>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipsec>
+	<enabled>true</enabled>
+	<logging>
+		<logLevel>debug</logLevel>
+		<enable>true</enable>
+	</logging>
+	<global>
+		<psk>hello123</psk>
+		 <caCertificates/>
+         <crlCertificates/>
+	</global>
+</ipsec>

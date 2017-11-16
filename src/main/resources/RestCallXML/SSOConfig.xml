@@ -1,0 +1,5 @@
+<ssoConfig>
+<ssoLookupServiceUrl>https://172.16.99.170:7444/lookupservice/sdk</ssoLookupServiceUrl>
+<ssoAdminUsername>administrator@vsphere.local</ssoAdminUsername>
+<ssoAdminUserpassword>#EDC4rfv</ssoAdminUserpassword>
+</ssoConfig>

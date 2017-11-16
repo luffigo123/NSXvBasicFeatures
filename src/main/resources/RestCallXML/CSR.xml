@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csr>
+        <subject>
+            <attribute>
+                <key>CN</key>
+                <value>Fei</value>
+            </attribute>
+            <attribute>
+                <key>O</key>
+                <value>vmware</value>
+            </attribute>
+            <attribute>
+                <key>OU</key>
+                <value>vmware</value>
+            </attribute>
+            <attribute>
+                <key>L</key>
+                <value>Beijing</value>
+            </attribute>
+            <attribute>
+                <key>ST</key>
+                <value>Beijing</value>
+            </attribute>
+            <attribute>
+                <key>C</key>
+                <value>CN</value>
+            </attribute>
+        </subject>
+        <algorithm>RSA</algorithm>
+        <keySize>2048</keySize>
+</csr>

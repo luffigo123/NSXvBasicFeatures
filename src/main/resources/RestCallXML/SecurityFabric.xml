@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clusterDeploymentConfigs>
+	<clusterDeploymentConfig>
+		<clusterId>cluster-id</clusterId>
+		<datastore>ds-id</datastore> <!-- Used only in POST. Should be empty in PUT -->
+		<services>
+			<serviceDeploymentConfig>
+				<serviceId>service-id</serviceId>
+				<dvPortGroup>dvpg-id</dvPortGroup>
+				<ipPool></ipPool>
+			</serviceDeploymentConfig>
+		</services>
+	</clusterDeploymentConfig>
+</clusterDeploymentConfigs>

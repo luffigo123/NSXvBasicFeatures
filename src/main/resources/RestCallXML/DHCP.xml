@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dhcp>
+	<enabled>false</enabled>
+	<logging>
+		<enable>false</enable>
+		<logLevel>info</logLevel>
+	</logging>
+</dhcp>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<authenticationConfig>
+    <passwordAuthentication>
+        <authenticationTimeout>1</authenticationTimeout>
+        <primaryAuthServers>
+            <localAuthServer>
+                <authServerType>local</authServerType>
+                <order>1</order>
+                <isSecondaryAuthServer>false</isSecondaryAuthServer>
+                <terminateSessionOnAuthFails>false</terminateSessionOnAuthFails>
+                <enabled>true</enabled>
+                <passwordPolicy>
+                    <minLength>1</minLength>
+                    <maxLength>63</maxLength>
+                    <minAlphabets>0</minAlphabets>
+                    <minDigits>0</minDigits>
+                    <minSpecialChar>0</minSpecialChar>
+                    <allowUserIdWithinPassword>true</allowUserIdWithinPassword>
+                    <passwordLifeTime>30</passwordLifeTime>
+                    <expiryNotification>25</expiryNotification>
+                </passwordPolicy>
+                <accountLockoutPolicy>
+                    <retryCount>3</retryCount>
+                    <retryDuration>1</retryDuration>
+                    <lockoutDuration>1</lockoutDuration>
+                </accountLockoutPolicy>
+            </localAuthServer>
+        </primaryAuthServers>
+        <secondaryAuthServer/>
+    </passwordAuthentication>
+</authenticationConfig>

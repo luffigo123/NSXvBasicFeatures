@@ -1,0 +1,17 @@
+<vnic>
+	<index>0</index>
+	<name>Upink02</name>
+	<type>uplink</type>
+	<portgroupId>network-13</portgroupId>
+	<addressGroups>
+    <addressGroup>
+    <primaryAddress>10.117.168.252</primaryAddress>
+    <subnetMask>255.255.0.0</subnetMask>
+    <subnetPrefixLength>16</subnetPrefixLength>
+    </addressGroup>
+    </addressGroups>
+	<mtu>1500</mtu>
+	<enableProxyArp>false</enableProxyArp>
+	<enableSendRedirects>true</enableSendRedirects>
+	<isConnected>true</isConnected>
+</vnic>

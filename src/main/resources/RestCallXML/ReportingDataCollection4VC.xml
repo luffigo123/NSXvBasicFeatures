@@ -1,0 +1,8 @@
+<request>
+	<actions>
+		<action>
+			<type>global_switch</type>
+			<value>disabled</value>
+		</action>
+	</actions>
+</request>

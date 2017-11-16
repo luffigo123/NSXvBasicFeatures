@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LDAPServer> 
+  <domainId>11</domainId>  
+  <hostName>172.16.29.249</hostName>  
+  <enabled>true</enabled>
+</LDAPServer>

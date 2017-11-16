@@ -1,0 +1,19 @@
+<securitygroup>
+    <objectId></objectId>
+    <objectTypeName>SecurityGroup</objectTypeName>
+    <vsmUuid></vsmUuid>
+    <revision>3</revision>
+    <type>
+        <typeName>SecurityGroup</typeName>
+    </type>
+    <name>SecurityGroup000122</name>
+    <description>Desc SecurityGroup0001SecurityGroup0001222</description>
+    <scope>
+        <id>globalroot-0</id>
+        <objectTypeName>GlobalRoot</objectTypeName>
+        <name>Global</name>
+    </scope>
+    <clientHandle></clientHandle>
+    <extendedAttributes/>
+    <inheritanceAllowed>false</inheritanceAllowed>
+</securitygroup>

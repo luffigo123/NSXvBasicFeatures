@@ -1,0 +1,78 @@
+<securityPolicy>
+<name>Security Policy002</name>
+<description>Security PolicySecurity PolicySecurity Policy</description>
+<precedence>4300</precedence>
+<actionsByCategory>
+<category>firewall</category>
+<action class="firewallSecurityAction">
+<objectTypeName>FirewallPolicyAction</objectTypeName>
+<type>
+<typeName>FirewallPolicyAction</typeName>
+</type>
+<name>ExpImpchildSP_FWExpImp</name>
+<description>DESC CHILD FW</description>
+<scope>
+<id>globalroot-0</id>
+<objectTypeName>GlobalRoot</objectTypeName>
+<name>Global</name>
+</scope>
+<clientHandle>
+</clientHandle>
+<extendedAttributes/>
+<category>firewall</category>
+<executionOrder>1</executionOrder>
+<isEnabled>true</isEnabled>
+<isActionEnforced>false</isActionEnforced>
+<invalidSecondaryContainers>false</invalidSecondaryContainers>
+<applications>
+                <application>
+                    <objectId>application-278</objectId>
+                    <objectTypeName>Application</objectTypeName>
+                    <revision>20</revision>
+                    <type>
+                        <typeName>Application</typeName>
+                    </type>
+                    <name>HTTP</name>
+                    <scope>
+                        <id>globalroot-0</id>
+                        <objectTypeName>GlobalRoot</objectTypeName>
+                        <name>Global</name>
+                    </scope>
+                    <clientHandle></clientHandle>
+                    <extendedAttributes/>
+                    <inheritanceAllowed>true</inheritanceAllowed>
+                    <element>
+                        <applicationProtocol>TCP</applicationProtocol>
+                        <value>80</value>
+                    </element>
+                </application>
+                <application>
+                    <objectId>application-315</objectId>
+                    <objectTypeName>Application</objectTypeName>
+                    <revision>25</revision>
+                    <type>
+                        <typeName>Application</typeName>
+                    </type>
+                    <name>HTTPS</name>
+                    <scope>
+                        <id>globalroot-0</id>
+                        <objectTypeName>GlobalRoot</objectTypeName>
+                        <name>Global</name>
+                    </scope>
+                    <clientHandle></clientHandle>
+                    <extendedAttributes/>
+                    <inheritanceAllowed>true</inheritanceAllowed>
+                    <element>
+                        <applicationProtocol>TCP</applicationProtocol>
+                        <value>443</value>
+                    </element>
+                </application>
+            </applications>
+<invalidApplications>false</invalidApplications>
+<logged>true</logged>
+<action>block</action>
+<direction>outbound</direction>
+<outsideSecondaryContainer>false</outsideSecondaryContainer>
+</action>
+</actionsByCategory>
+</securityPolicy>

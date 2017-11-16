@@ -1,0 +1,8 @@
+<ipPool>
+	<ipRange>192.168.4.192-192.168.4.220</ipRange> 
+	<defaultGateway>192.168.4.1</defaultGateway> 
+	<domainName>eng.vmware.com</domainName>
+	<primaryNameServer>192.168.4.1</primaryNameServer>
+	<secondaryNameServer>4.2.2.4</secondaryNameServer>
+	<leaseTime>3600</leaseTime>
+</ipPool>

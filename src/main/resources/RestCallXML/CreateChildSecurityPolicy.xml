@@ -1,0 +1,8 @@
+<securityPolicy>
+	<name>Security Policy 0022</name>
+	<description>Child Security Policy Security PolicySecurity Policy</description>
+	<precedence>6300</precedence>
+	<parent>
+		<objectId>policy-6</objectId>
+	</parent>
+</securityPolicy>

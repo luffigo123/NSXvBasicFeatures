@@ -1,0 +1,21 @@
+<l2Vpn>
+    <enabled>true</enabled>
+    <logging>
+        <enable>false</enable>
+        <logLevel>info</logLevel>
+    </logging>
+    <l2VpnSites>
+        <l2VpnSite>
+            <server>
+                <configuration>
+                    <listenerIp>10.117.168.251</listenerIp>
+                    <listenerPort>443</listenerPort>
+                    <encryptionAlgorithm>RC4-MD5</encryptionAlgorithm>
+                    <serverCertificate></serverCertificate> <!-- Optional. If not specified server will use its default(selfsigned) certificate-->
+                    <peerSites>
+                    </peerSites>
+                </configuration>
+            </server>
+        </l2VpnSite>
+    </l2VpnSites>
+</l2Vpn>

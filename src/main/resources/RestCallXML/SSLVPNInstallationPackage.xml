@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientInstallPackage>
+	<profileName>client</profileName>
+	<gatewayList>
+		<gateway>
+			<hostName>10.112.243.123</hostName>
+			<port>443</port> <!--optional. Default is 443-->
+		</gateway>
+	</gatewayList>
+	<startClientOnLogon>false</startClientOnLogon> <!--optional. Default is false-->
+	<hideSystrayIcon>true</hideSystrayIcon> <!--optional. Default is false-->
+	<rememberPassword>true</rememberPassword> <!--optional. Default is false-->
+	<silentModeOperation>true</silentModeOperation> !--optional. Default is false-->
+	<silentModeInstallation>false</silentModeInstallation> <!--optional. Default is false-->
+	<hideNetworkAdaptor>false</hideNetworkAdaptor> <!--optional. Default is false-->
+	<createDesktopIcon>true</createDesktopIcon> <!--optional. Default is true-->
+	<enforceServerSecurityCertValidation>false</enforceServerSecurityCertValidation> <!--optional. Default is true-->
+	<createLinuxClient>false</createLinuxClient> <!--optional. Default is false-->
+	<createMacClient>false</createMacClient> <!--optional. Default is false-->
+	<description>windows client</description>
+	<enabled>true</enabled> <!--optional. Default is true-->
+</clientInstallPackage>

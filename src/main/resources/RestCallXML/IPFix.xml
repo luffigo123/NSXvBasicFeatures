@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipfixConfiguration>
+	<contextId>globalroot-0</contextId>
+	<ipfixEnabled>true</ipfixEnabled>
+	<observationDomainId>1234</observationDomainId>
+	<flowTimeout>50</flowTimeout>
+	<collector>
+		<ip>11.11.12.13</ip>
+		<port>8086</port>
+	</collector>
+</ipfixConfiguration>

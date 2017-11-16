@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serverSettings>
+	<serverAddresses>
+		<ipAddress></ipAddress>
+	</serverAddresses>
+	<port>443</port> 
+	<cipherList>
+		<cipher>AES128-SHA</cipher>
+		<cipher>AES256-SHA</cipher>
+	</cipherList>
+</serverSettings>

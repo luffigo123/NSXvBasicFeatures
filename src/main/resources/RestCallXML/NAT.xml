@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<natRules>
+	<natRule> 
+		<action>dnat</action>
+		<vnic>0</vnic>
+		<originalAddress>10.117.168.251</originalAddress>
+		<translatedAddress>192.168.1.2</translatedAddress>
+		<loggingEnabled>true</loggingEnabled>
+		<enabled>true</enabled>
+		<description>my comments</description>
+		<protocol>any</protocol>
+		<translatedPort>any</translatedPort>
+		<originalPort>any</originalPort>
+	</natRule>
+</natRules>

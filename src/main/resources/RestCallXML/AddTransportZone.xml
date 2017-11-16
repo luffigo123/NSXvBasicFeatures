@@ -1,0 +1,24 @@
+<vdnScope>
+<objectTypeName>VdnScope</objectTypeName>
+<type>
+<typeName>VdnScope</typeName>
+</type>
+<name>TransportZone2</name>
+<description>The Transport zone test 002</description>
+<extendedAttributes/>
+<clusters>
+<cluster>
+<cluster>
+<objectId>domain-c7</objectId>
+<objectTypeName>ClusterComputeResource</objectTypeName>
+<type><typeName>ClusterComputeResource</typeName></type>
+<scope>
+<objectTypeName>Datacenter</objectTypeName>
+<name>Datacenter1</name>
+</scope>
+<extendedAttributes/>
+</cluster>
+</cluster>
+</clusters>
+<controlPlaneMode>MULTICAST_MODE</controlPlaneMode>
+</vdnScope>

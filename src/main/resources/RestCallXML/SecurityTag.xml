@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<securityTag>
+    <objectTypeName>SecurityTag</objectTypeName>
+    <revision>0</revision>
+    <type>
+        <typeName>SecurityTag</typeName>
+    </type>
+    <name>Figo4</name>
+    <description>test</description>
+    <clientHandle></clientHandle>
+    <extendedAttributes/>
+    <systemResource>false</systemResource>
+</securityTag>
