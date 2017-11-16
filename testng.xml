@@ -5,25 +5,7 @@
 	<test name="NSXFVTP0" preserve-order="true">
 		<groups>
 			<define name="RunAvailableGroups">
- 			   	<include name="GroupingObjects"></include>
-		 	 	<include name="Domain"></include>
-				<include name="SecurityTags"></include>
-				<include name="Firewall"></include>
-			 	<include name="ExclusionList"></include>
-				<include name="FlowMonitoring"></include>		
-				<include name="ServiceComposer"></include>
-				<include name="SpoofGuard"></include>
-				<include name="VXLAN"></include>
-				
-	 		  	<include name="Edge"></include>
-				<include name="EdgeDHCP"></include>
-				<include name="EdgeFirewall"></include>
-				<include name="EdgeIPSecVPN"></include>
-				<include name="EdgeL2VPN"></include>
-				<include name="EdgeNAT"></include>
-				<include name="EdgeSSLVPN"></include>
-
-				<!-- <include name="SAM"></include> -->
+ 			   	<include name="basicFunction"></include>
 			</define>
 			
 			<define name="ExcludeGroups">
